@@ -3,7 +3,7 @@ Port of ulisp-lispbox text editor for the LilyGO T-Deck. Orignal editor was writ
 
 
 ## How to install
-Add the lisplibrary.h and extensions.ino files to the folder which contains [ulisp-tdeck.ino](https://github.com/technoblogy/ulisp-tdeck). Then follow the setup instructions for [extensions](http://www.ulisp.com/show?19Q4) and [lisplibrary](http://www.ulisp.com/show?27OV) to enable both features. Add the `initTouch();` and `inittrackball();` functions to the `setup()` function in `ulisp-tdeck.ino` to enable the touchscreen and trackball.
+Do all the things needed to set up the [t-deck](http://www.ulisp.com/show?4JAO). The t-deck library contains the [SensorsLib](https://github.com/Xinyuan-LilyGO/T-Deck/tree/master/lib/SensorsLib) folder which contains the touchscreen drivers. Move that folder into the arduino library folder. Add the lisplibrary.h and extensions.ino files to the folder which contains [ulisp-tdeck.ino](https://github.com/technoblogy/ulisp-tdeck). Then follow the setup instructions for [extensions](http://www.ulisp.com/show?19Q4) and [lisplibrary](http://www.ulisp.com/show?27OV) to enable both features. Add the `initTouch();` and `inittrackball();` functions to the `setup()` function in `ulisp-tdeck.ino` to enable the touchscreen and trackball.
 
 ## Known issues
 - [superprint issue](http://forum.ulisp.com/t/packages-and-persistent-storage/1318/16) breaks the editing of existing functions by introducing escape characters into the string being edited
