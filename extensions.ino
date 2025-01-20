@@ -10,6 +10,23 @@
 // Definitions
 
 
+#define touchscreen
+
+#if defined(touchscreen)
+#include "TouchDrvGT911.hpp"
+TouchDrvGT911 touch;
+#endif
+
+#define TDECK_TOUCH_INT     16
+
+#define TDECK_TRACKBALL_UP 3
+#define TDECK_TRACKBALL_DOWN 15
+#define TDECK_TRACKBALL_LEFT 1
+#define TDECK_TRACKBALL_RIGHT 2
+
+volatile int ball_val = 0;
+
+
 void initTouch(){
   #if defined (touchscreen)
   pinMode(TDECK_TOUCH_INT, INPUT);
